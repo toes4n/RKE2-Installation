@@ -1,0 +1,13 @@
+---
+apiVersion: "cilium.io/v2alpha1"
+kind: CiliumLoadBalancerIPPool
+metadata:
+  name: "main-lb-ip-pool"
+spec:
+  blocks:
+    - cidr: "192.168.100.0/24"
+  serviceSelector:
+    matchLabels:
+      app.kubernetes.io/name: ingress-nginx
+      app.kubernetes.io/component: controller
+
