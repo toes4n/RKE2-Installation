@@ -159,3 +159,7 @@ Build a Kubernetes Cluster with RKE2 + Cilium CNI
 ### check Cilium IP pool again
 
     kubectl get ciliumloadbalancerippool,ciliumpodippool -A  
+
+ ### Install Nginx Ingress Controller (Option) # Can use build in Cilium Ingress
+
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/refs/heads/main/deploy/static/provider/cloud/deploy.yaml
