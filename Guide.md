@@ -162,4 +162,4 @@ Build a Kubernetes Cluster with RKE2 + Cilium CNI
 
  ### Install Nginx Ingress Controller (Option) # Can use build in Cilium Ingress
 
- kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/refs/heads/main/deploy/static/provider/cloud/deploy.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/refs/heads/main/deploy/static/provider/cloud/deploy.yaml
