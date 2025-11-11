@@ -8,7 +8,8 @@ curl -sfL https://get.rke2.io | sudo sh -
 sudo mkdir -p /etc/rancher/rke2
 sudo vim /etc/rancher/rke2/config.yaml
 
-# Config
+# Config 
+
 write-kubeconfig-mode: "0644"
 advertise-address: 192.168.100.50
 tls-san:
