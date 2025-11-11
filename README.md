@@ -48,7 +48,8 @@ Build a Kubernetes Cluster with RKE2 + Cilium CNI
     echo 'export KUBECONFIG=/etc/rancher/rke2/rke2.yaml' >> ~/.bashrc
 
 # Cilium Install
-# Linux
+#Install the Cilium CLI (Linux)
+
     CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium-cli/main/stable.txt)
     CLI_ARCH=amd64
     if [ "$(uname -m)" = "aarch64" ]; then CLI_ARCH=arm64; fi
